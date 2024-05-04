@@ -50,9 +50,9 @@ def pregunta_02():
         for line in file:
             columns = line.strip().split('\t')
             letter = columns[0]
-        if letter in counts:
+            if letter in counts:
                 counts[letter] += 1
-        else:
+            else:
                 counts[letter] = 1
     
     rpta = sorted([(letter, count) for letter, count in counts.items()])
